@@ -44,7 +44,7 @@ export default function FlowersByCategory({ params }) {
   return (
     <div className="w-full p-4">
       <h1 className={`text-4xl font-bold p-4 ${italiana.className}`}>
-        {params?.id == 4 ? "Autumn" : params?.id == 5 ? "Wedding" : params?.id == 3 ? "Birthday" : "Others"}
+        {params?.id == 1 ? "Autumn" : params?.id == 2 ? "Wedding" : params?.id == 3 ? "Birthday" : "Others"}
       </h1>
       {loading ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 ">
@@ -98,7 +98,7 @@ export default function FlowersByCategory({ params }) {
                   width={200}
                   height={200}
                   className="h-[275px] w-[350px] rounded-lg object-cover hover:scale-110 ease-linear duration-200"
-                  src={flower?.image || BlurImage}
+                  src={flower?.image_url || BlurImage}
                   alt={flower?.title}
                   placeholder="blur"
                   blurDataURL={Base64Image}

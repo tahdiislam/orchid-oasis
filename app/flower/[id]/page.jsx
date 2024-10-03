@@ -210,7 +210,7 @@ export default function Flower({ params }) {
       ) : (
         <div className=" md:w-[95%] lg:w-10/12 grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto ">
           <Image
-            src={flower?.image}
+            src={flower?.image_url}
             alt={flower?.title || "flower image"}
             width={250}
             height={250}

@@ -16,7 +16,7 @@ export default function Categories() {
         Shop by Popular Ocasions
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-        <Link href="/flower/category/4">
+        <Link href="/flower/category/1">
           <picture className="overflow-hidden block ">
             <Image
               src={Autumn}
@@ -31,7 +31,7 @@ export default function Categories() {
             Autumn
           </h3>
         </Link>
-        <Link href="/flower/category/5">
+        <Link href="/flower/category/2">
           <picture className="overflow-hidden block">
             <Image
               src={Wedding}

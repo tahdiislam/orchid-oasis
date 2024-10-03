@@ -98,7 +98,7 @@ export default function Flowers() {
                   width={200}
                   height={200}
                   className="h-[275px] w-[350px] rounded-lg object-cover hover:scale-110 ease-linear duration-200"
-                  src={flower?.image || BlurImage}
+                  src={flower?.image_url || BlurImage}
                   alt={flower?.title}
                   placeholder="blur"
                   blurDataURL={Base64Image}

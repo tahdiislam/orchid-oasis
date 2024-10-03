@@ -5,7 +5,7 @@
 
 const nextConfig = {
   images: {
-    domains: ["127.0.0.1", "orchid-oasis.onrender.com"],
+    domains: ["127.0.0.1", "orchid-oasis.onrender.com", "i.ibb.co"],
   },
 };
 
