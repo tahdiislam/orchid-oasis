@@ -57,7 +57,7 @@ export default function Login() {
         form.reset();
 
         // Fetch user data
-        await fetchUser()
+        await fetchUser();
 
         // Redirect based on user role
         if (res.data.admin) {
@@ -74,6 +74,13 @@ export default function Login() {
         toast({
           description: "Invalid credentials",
           status: "error",
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          description: error.message,
+          status: "error",
+          variant: "destructive",
         });
       }
     } finally {
